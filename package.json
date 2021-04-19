@@ -19,7 +19,8 @@
 		"url": "https://github.com/lauraferrandof/linters/issues"
 	},
 	"homepage": "https://github.com/lauraferrandof/linters#readme",
-	"dependencies": {
+	"devDependencies": {
+		"css-loader": "^5.2.2",
 		"eslint": "^7.24.0",
 		"eslint-config-airbnb": "^18.2.1",
 		"eslint-config-prettier": "^8.2.0",
@@ -28,11 +29,8 @@
 		"eslint-plugin-prettier": "^3.4.0",
 		"eslint-plugin-react": "^7.23.2",
 		"eslint-plugin-react-hooks": "^4.2.0",
-		"prettier": "^2.2.1"
-	},
-	"devDependencies": {
-		"css-loader": "^5.2.2",
 		"html-webpack-plugin": "^5.3.1",
+		"prettier": "^2.2.1",
 		"style-loader": "^2.0.0",
 		"webpack": "^5.33.2",
 		"webpack-cli": "^4.6.0",
