@@ -1,24 +1,16 @@
 {
-	"name": "linters",
+	"name": "boilerplate",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"private": true,
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "webpack",
 		"watch": "webpack --watch",
 		"start": "webpack serve --open"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/lauraferrandof/linters.git"
-	},
 	"author": "",
 	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/lauraferrandof/linters/issues"
-	},
-	"homepage": "https://github.com/lauraferrandof/linters#readme",
 	"devDependencies": {
 		"css-loader": "^5.2.2",
 		"eslint": "^7.24.0",
