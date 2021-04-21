@@ -3,13 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	entry: './src/index.js',
-	mode: 'development',
-	devtool: 'inline-source-map',
-	devServer: {
-		contentBase: './dist'
-	},
 	output: {
-		filename: 'index.js',
+		filename: 'main.js',
 		path: path.resolve(__dirname, 'dist'),
 		assetModuleFilename: 'images/[name][ext]',
 		clean: true
@@ -29,18 +24,14 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.sass$/i,
-				use: ['style-loader', 'css-loader', 'sass-loader']
-			},
-			{
 				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				exclude: /(node_modules)/,
 				type: 'asset/resource'
 			}
 		]
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'Getting started',
 			template: './src/index.html'
 		})
 	]

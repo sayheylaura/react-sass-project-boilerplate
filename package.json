@@ -4,10 +4,8 @@
 	"description": "",
 	"private": true,
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "webpack",
-		"watch": "webpack --watch",
-		"start": "webpack serve --open"
+		"build": "webpack --config webpack.prod.js",
+		"start": "webpack serve --open --config webpack.dev.js"
 	},
 	"author": "",
 	"license": "ISC",
@@ -24,6 +22,7 @@
 		"@babel/preset-react": "^7.13.13",
 		"babel-loader": "^8.2.2",
 		"css-loader": "^5.2.2",
+		"css-minimizer-webpack-plugin": "^2.0.0",
 		"eslint": "^7.24.0",
 		"eslint-config-airbnb": "^18.2.1",
 		"eslint-config-prettier": "^8.2.0",
@@ -33,13 +32,15 @@
 		"eslint-plugin-react": "^7.23.2",
 		"eslint-plugin-react-hooks": "^4.2.0",
 		"html-webpack-plugin": "^5.3.1",
+		"mini-css-extract-plugin": "^1.5.0",
 		"prettier": "^2.2.1",
 		"sass": "^1.32.11",
 		"sass-loader": "^11.0.1",
 		"style-loader": "^2.0.0",
 		"webpack": "^5.33.2",
 		"webpack-cli": "^4.6.0",
-		"webpack-dev-server": "^3.11.2"
+		"webpack-dev-server": "^3.11.2",
+		"webpack-merge": "^5.7.3"
 	},
 	"browserslist": [
 		"defaults",
