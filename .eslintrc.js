@@ -5,5 +5,8 @@ module.exports = {
 		node: true
 	},
 	extends: ['airbnb', 'plugin:prettier/recommended'],
-	plugins: ['import', 'jsx-a11y', 'react', 'react-hooks']
+	plugins: ['import', 'jsx-a11y', 'react', 'react-hooks'],
+	rules: {
+		'react/jsx-filename-extension': 'off'
+	}
 };
