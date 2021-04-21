@@ -5,7 +5,10 @@
 	"private": true,
 	"scripts": {
 		"build": "webpack --config webpack.prod.js",
-		"start": "webpack serve --open --config webpack.dev.js"
+		"deps:install": "npx yarn install --pure-lockfile",
+		"eslint": "npx eslint",
+		"start": "webpack serve --open --config webpack.dev.js",
+		"stylelint": "npx stylelint ./src/**/*.sass -s sass -q"
 	},
 	"author": "",
 	"license": "ISC",
