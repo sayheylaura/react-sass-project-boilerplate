@@ -11,6 +11,17 @@ module.exports = {
 			'error',
 			{ devDependencies: ['webpack.*.js'] }
 		],
-		'react/jsx-filename-extension': 'off'
+		'no-unused-expressions': [
+			'error',
+			{
+				allowShortCircuit: true,
+				allowTernary: true
+			}
+		],
+		'react-hooks/exhaustive-deps': 'warn',
+		'react-hooks/rules-of-hooks': 'error',
+		'react/button-has-type': 'off',
+		'react/jsx-filename-extension': 'off',
+		'react/jsx-no-bind': 'off'
 	}
 };
