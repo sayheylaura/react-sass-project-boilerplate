@@ -1,0 +1,22 @@
+@use '../utils/variables' as *
+
+$font-files-path: 'assets/fonts'
+
+=font-face($file-path, $font-family, $font-weight, $font-style: null)
+  @font-face
+    font-family: $font-family
+    src: url('#{$file-path}.woff2') format('woff2'), url('#{$file-path}.woff') format('woff')
+    -webkit-font-smoothing: antialiased
+    font-display: swap
+    font-style: normal
+    font-weight: $font-weight
+
+    @if $font-style
+      font-style: $font-style
+
++font-face('#{$font-files-path}/raleway/extra-light/raleway--extra-light', $local-font-family--default, $font-weight--extra-light)
++font-face('#{$font-files-path}/raleway/extra-light-italic/raleway--extra-light-italic', $local-font-family--default, $font-weight--extra-light, $font-style--italic)
++font-face('#{$font-files-path}/raleway/regular/raleway--regular', $local-font-family--default, $font-weight--regular)
++font-face('#{$font-files-path}/raleway/regular-italic/raleway--regular-italic', $local-font-family--default, $font-weight--regular, $font-style--italic)
++font-face('#{$font-files-path}/raleway/semibold/raleway--semibold', $local-font-family--default, $font-weight--semibold)
++font-face('#{$font-files-path}/raleway/semibold-italic/raleway--semibold-italic', $local-font-family--default, $font-weight--semibold, $font-style--italic)
