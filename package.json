@@ -1,7 +1,7 @@
 {
-	"name": "boilerplate",
+	"name": "react-project-boilerplate",
 	"version": "1.0.0",
-	"description": "",
+	"description": "A boilerplate to create a React project 🔥",
 	"private": true,
 	"scripts": {
 		"build": "webpack --config webpack.prod.js",
@@ -10,8 +10,8 @@
 		"start": "webpack serve --open --config webpack.dev.js",
 		"stylelint": "stylelint ./src/**/*.sass -s sass -q"
 	},
-	"author": "",
-	"license": "ISC",
+	"author": "Laura Ferrando",
+	"license": "MIT",
 	"dependencies": {
 		"@babel/runtime": "7.15.4",
 		"react": "17.0.2",
